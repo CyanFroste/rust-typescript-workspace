@@ -1,0 +1,7 @@
+@tailwind base;
+
+@layer base {
+  svg {
+    @apply w-[1em] h-[1em] min-w-4 min-h-4 text-current stroke-2 text-base;
+  }
+}

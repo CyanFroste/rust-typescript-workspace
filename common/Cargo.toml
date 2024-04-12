@@ -1,0 +1,27 @@
+[package]
+name = "common"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde_derive = { workspace = true }
+tauri = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+axum = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+bson = { workspace = true }
+mongodb = { workspace = true }
+chrono = { workspace = true }
+thiserror = { workspace = true }
+serde_with = { workspace = true }
+json_typegen = { workspace = true }
+futures = { workspace = true }
+reqwest = { workspace = true }
+scraper = { workspace = true }
+tower-http = { workspace = true }
+once_cell = { workspace = true }
+sysinfo = { workspace = true }
+rand = { workspace = true }

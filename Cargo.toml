@@ -1,0 +1,32 @@
+# https://doc.rust-lang.org/cargo/reference/workspaces.html
+
+[workspace]
+members = ["common", "app/backend", "api"]
+resolver = "2"
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.60"
+
+[workspace.dependencies]
+serde_json = "1.0.115"
+serde = { version = "1.0.197", features = ["derive"] }
+axum = { version = "0.7.5", features = ["macros"] }
+tokio = { version = "1.37.0", features = ["macros"] }
+anyhow = "1.0.81"
+bson = { version = "2.10.0", features = ["chrono-0_4"] }
+mongodb = "2.8.2"
+chrono = "0.4.37"
+thiserror = "1.0.58"
+serde_with = { version = "3.7.0", features = ["chrono_0_4"] }
+once_cell = "1.19.0"
+json_typegen = "0.7.0"
+futures = "0.3.30"
+reqwest = { version = "0.12.3", features = ["json", "stream"] }
+scraper = "0.19.0"
+tower-http = { version = "0.5.2", features = ["cors"] }
+tauri = { version = "1.6.1", features = ["api-all", "devtools"] }
+sysinfo = "0.30.8"
+serde_derive = "1.0.197"
+rand = "0.8.5"

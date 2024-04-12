@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "<your_db_name>",
+    "url": "mongodb://127.0.0.1:27017/<your_db_name>>",
+    "processName": "mongod",
+    "backupPath": "<absolute_path_to_store_backups>"
+  },
+  "servers": { "api": { "port": 8000 } },
+  "timestampFormats": {
+    "dateFns": "yyyy-MM-dd-HH'h'mm'm'ss's'",
+    "chrono": "%Y-%m-%d-%Hh%Mm%Ss"
+  }
+}

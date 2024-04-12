@@ -1,0 +1,30 @@
+[package]
+name = "app"
+default-run = "app"
+description = "Your App Description"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "1.5.1", features = [] }
+
+[dependencies]
+common = { path = "../../common" }
+window-shadows = "0.2.2"
+tauri = { workspace = true }
+serde_json = { workspace = true }
+serde = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+bson = { workspace = true }
+mongodb = { workspace = true }
+thiserror = { workspace = true }
+serde_with = { workspace = true }
+reqwest = { workspace = true }
+
+[features]
+# this feature is used for production builds or when `devPath` points to the filesystem and the built-in dev server is disabled.
+# If you use cargo directly instead of tauri's cli you can use this feature flag to switch between tauri's `dev` and `build` modes.
+# DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]

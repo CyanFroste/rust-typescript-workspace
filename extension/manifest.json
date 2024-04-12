@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "<Your Extension Name>",
+  "version": "1.0.0",
+  "description": "Your Extension description goes here",
+  "incognito": "spanning",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["dist/<your_extension_name>.js"]
+    }
+  ]
+}

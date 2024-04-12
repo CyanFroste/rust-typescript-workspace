@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .side-bar {
+    @apply w-[28rem] shrink-0 h-full flex flex-col gap-3;
+  }
+}
